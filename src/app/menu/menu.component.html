@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <!-- d-flex align-items-center: alinha os itens verticalmente -->
+        <!-- mr-auto : diz que a margem right (direita) está alta, ou seja, está tudo para a direita. Pode-se dar um ml e fazer ficar tudo para a esquerda. Pode-se dar apenas m e deixar tudo no centro. -->
+        <ul class="navbar-nav mr-auto d-flex align-items-center">
+            <li class="nav-item active">
+                <!-- width e heigth : altera tamanho da foto -->
+                <!-- classe img-fluid: torna imagem responsiva a qualquer tipo de tela -->
+                <!-- classe rounded circle: deixa a imagem redonda -->
+                <img src="https://imgur.com/EBJQ5cM.jpg" alt="Foto User" width="50px" height="50px"
+                    class="img-fluid rounded-circle">
+            </li>
+
+            <!-- pl: padding left (espaço à esquerda) de 3 (tamanho específico da classe) -->
+            <li class="nav-item pl-3 ">
+                <!-- m-0 : margem zero, sem margem, fonte e cor do texto tem no site do bootstrap -->
+                <p class="m-0 font-weigth-bold text-white fs-16">Nome do usuario</p>
+            </li>
+
+            <li class="nav-item pl-3 ">
+                <a href="">
+                    <p class="text-white fs-16 m-0">
+                        <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
+                    </p>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto d-flex align-items-center">
+            <li class="nav-item pl-3 ">
+                <!-- m-0 : margem zero, sem margem, fonte e cor do texto tem no site do bootstrap -->
+                <!-- i class="fa fa-sign-out" : ícone para sair, código extraído do https://fontawesome.com/v4.7.0/icon/sign-out -->
+                <a class="m-0 font-weigth-bold text-white fs-16">Sair <i class="fa fa-sign-out"
+                        aria-hidden="true"></i></a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
