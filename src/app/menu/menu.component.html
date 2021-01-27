@@ -12,14 +12,14 @@
                 <!-- width e heigth : altera tamanho da foto -->
                 <!-- classe img-fluid: torna imagem responsiva a qualquer tipo de tela -->
                 <!-- classe rounded circle: deixa a imagem redonda -->
-                <img src="https://i.imgur.com/EBJQ5cM.jpg?1" alt="Foto User" width="50px" height="50px"
+                <img src="{{foto}}" alt="imagem do user" width="50px" height="50px"
                     class="img-fluid rounded-circle">
             </li>
 
             <!-- pl: padding left (espaço à esquerda) de 3 (tamanho específico da classe) -->
             <li class="nav-item pl-3 ">
                 <!-- m-0 : margem zero, sem margem, fonte e cor do texto tem no site do bootstrap -->
-                <p class="m-0 font-weigth-bold text-white fs-16">Nome do usuario</p>
+                <p class="m-0 font-weigth-bold text-white fs-16">{{nome}}</p>
             </li>
 
             <li class="nav-item pl-3 ">
@@ -35,7 +35,7 @@
             <li class="nav-item pl-3 ">
                 <!-- m-0 : margem zero, sem margem, fonte e cor do texto tem no site do bootstrap -->
                 <!-- i class="fa fa-sign-out" : ícone para sair, código extraído do https://fontawesome.com/v4.7.0/icon/sign-out -->
-                <a class="m-0 font-weigth-bold text-white fs-16">Sair <i class="fa fa-sign-out"
+                <a (click)="sair()" class="m-0 font-weigth-bold text-white fs-16">Sair <i class="fa fa-sign-out"
                         aria-hidden="true"></i></a>
             </li>
 
