@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { tema } from 'src/app/model/Tema';
+import { Tema } from 'src/app/model/Tema';
 import { TemaService } from 'src/app/service/tema.service';
 import { environment } from 'src/environments/environment.prod';
 
@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment.prod';
 export class TemaDeleteComponent implements OnInit {
 
 
-  tema : tema = new tema()
+  tema : Tema = new Tema()
   idTema: number
 
   constructor(
@@ -32,7 +32,7 @@ export class TemaDeleteComponent implements OnInit {
     this.findByIdTema(this.idTema)
   }
   findByIdTema(id: number) {
-   this.temaService.getByIdTema(id).subscribe((resp: tema)=>{
+   this.temaService.getByIdTema(id).subscribe((resp: Tema)=>{
      this.tema=resp
    })
   }
