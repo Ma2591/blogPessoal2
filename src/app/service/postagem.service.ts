@@ -9,6 +9,7 @@ import { User } from '../model/User';
 })
 export class PostagemService {
   user: User = new User()
+  
   constructor(private http: HttpClient) { }
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
